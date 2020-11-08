@@ -6,23 +6,44 @@ console.log(moment().format('hh'));
 //variable for the military hour right now
 var now = moment().format('HH');
 
-//if var now is greater than the value of hour class
+//if statement to change class of hour
 if (now > $('.hour').val()) {
 
-    //add the class of past to the input tag
     $('input').addClass("past");
-
-//else if var now is equal to the value of hour class  
+ 
 } else if (now == $('hour').val()) {
 
-    //add the class of present to the input tag
     $('input').addClass("present");
 
-//if var now is less than the value of hour class
 } else {
 
-    //add the class of future to the input tag
     $('input').addClass("future");
+
 };
+
+
+$("button").on('click', function(event){
+
+    event.preventDefault();
+
+    var time = $(this).siblings('.hour').text();
+
+    var entry = $(this).siblings('#textarea').val();
+
+    console.log(time);
+    console.log(entry);
+
+    localStorage.setItem(time, entry);
+
+});
+
+
+
+
+
+
+
+
+
 
 
