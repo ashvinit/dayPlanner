@@ -7,6 +7,13 @@ console.log(moment().format('hh'));
 var now = moment().format('HH');
 
 
+if ($('.hour').val() > now) {
+    $(this).siblings('input').addClass('past');
+} else if ($('.hour').val() < now) {
+    $(this).siblings('input').addClass('future');
+} else {
+    $(this).siblings('input').addClass('present');
+}
 
 
 
