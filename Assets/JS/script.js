@@ -6,20 +6,9 @@ console.log(moment().format('hh'));
 //variable for the military hour right now
 var now = moment().format('HH');
 
-//if statement to change class of hour
-if (now > $('.hour').val()) {
 
-    $('input').addClass("past");
- 
-} else if (now == $('hour').val()) {
 
-    $('input').addClass("present");
 
-} else {
-
-    $('input').addClass("future");
-
-};
 
 
 $("button").on('click', function(event){
