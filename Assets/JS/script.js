@@ -6,14 +6,18 @@ console.log(moment().format('hh'));
 //variable for the military hour right now
 var now = moment().format('HH');
 
+var nowInt = parseInt(now);
 
-if ($('.hour').val() > now) {
-    $(this).siblings('input').addClass('past');
-} else if ($('.hour').val() < now) {
-    $(this).siblings('input').addClass('future');
-} else {
-    $(this).siblings('input').addClass('present');
-}
+var timeslot = $('.hour').val();
+
+var timeslotInt = parseInt(timeslot);
+
+
+
+
+console.log(typeof(timeslotInt));
+console.log(typeof(nowInt));
+
 
 
 
@@ -31,7 +35,12 @@ $("button").on('click', function(event){
 
     localStorage.setItem(time, entry);
 
+ 
 });
+
+function saveText () {
+
+}
 
 
 
