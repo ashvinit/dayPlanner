@@ -1,5 +1,13 @@
-# dayPlanner
-This is my Day Planner:
+
+# Day Planner 
+
+[View App](https://ashvinit.github.io/dayPlanner/)
+
+
+## Description
+
+A simple calendar application that allows a user to save events for each hour of the work day. This app runs in the broswer and feature dynamically updated HTML and CSS powered by jQuery.
+
 
 ![Day Planner](Assets/Images/img1.png)
 
@@ -28,3 +36,14 @@ This is my Day Planner:
 6. Retrieve stored items was added to the function to change colors of the time blocks
 
 ![get item](Assets/Images/img8.png)
+
+
+## Questions
+
+If you have any further questions regarding this project, please feel free to contact.
+
+GitHub Username: ashvinit
+Email Address: ashvinithomas@gmail.com
+
+
+
